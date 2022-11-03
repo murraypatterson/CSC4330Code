@@ -38,7 +38,7 @@ searchtype = getattr(re, searchname)
 
 lines = sys.stdin
 if filename != '-' :
-    lines = open(filename, encoding = 'utf8', errors = 'ignore')
+    lines = open(filename,'r')
 
 for line in lines :
     line = line.strip()
